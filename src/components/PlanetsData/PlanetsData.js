@@ -26,7 +26,13 @@ class PlanetsData extends Component {
 
     const planetsData = await Promise.all(
       planets.map(
-        async (planet) => await fetchData(planet)
+        async (planetURL) => {
+          if (planetURL.match('^http://')){
+            planetURL = planetURL.replace("http://","https://")
+          }
+          const planetData = await fetchData(planetURL);
+          return planetData;
+        }
       )
     );
 
