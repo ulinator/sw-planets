@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  text-align: center;
+  max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Barlow', sans-serif;
+}
+
+.app-wrapper {
+  background-color: #e0e6ee;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.app-wrapper.top {
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+}
+
+.app-wrapper.bottom {
+  border-top: 2px dashed white;
+  border-radius: 0 0 8px 8px;
+  margin-top: 0
+}
+
+@media (min-width: 768px) {
+  .app-wrapper {
+    padding: 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.error {
+  margin-top: 30px;
+  color: red;
+}

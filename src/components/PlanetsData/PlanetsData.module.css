@@ -1,0 +1,89 @@
+.sortArrows {
+  position: relative;
+  padding-left: 6px;
+  height: 15px;
+}
+
+.sortArrows:before,
+.sortArrows:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background: url('../../assets/SORT_ARROW.svg');
+  width: 6px;
+  height: 5px;
+  top: 2px;
+}
+
+.sortArrows:after {
+  top: 9px;
+  transform: rotate(180deg);
+}
+
+th, td {
+  font-size: 12px;
+  padding: 5px;
+  min-width: 15%;
+}
+
+th {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+thead tr {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr 1.2fr;
+}
+
+.grid td {
+  padding: 10px;
+}
+
+.grid th {
+  align-self: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.planetsDataTable th,
+.planetsDataTable td {
+  text-align: right;
+}
+
+.planetsDataTable .planetName,
+.planetsDataSimple .planetName {
+  text-align: left;
+  color: #00687F;
+}
+
+.grid .planetName {
+  justify-content: flex-start;
+}
+
+.planetsDataTable {
+  width: 100%;
+  padding: 5px 10px 10px;
+}
+
+.planetsDataSimple {
+  width: 100%;
+  padding: 15px;
+}
+
+.planetsDataSimple th,
+.planetsDataSimple td {
+  text-align: left;
+  width: 50%;
+  padding: 8px 5px;
+}
+
+.planetsDataSimple:nth-child(even) {
+  background-color: rgba(229, 229, 229, 0.5);
+}

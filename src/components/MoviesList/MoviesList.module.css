@@ -1,0 +1,12 @@
+.moviesList {
+  background-color: #E0E6EE;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .moviesList {
+    padding: 30px;
+  }
+}
